@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 00;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 19px 10px;
+
+}
+.header input {
+    margin: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+.header i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.header i:hover {
+    color: blue;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.main {
+    display: flex;
+    margin: 29px;
+    flex-wrap: wrap;
+}
+.main img {
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.main img:hover {
+    filter: blur(2px);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.main p {
+    text-align: center;
+}
