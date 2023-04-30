@@ -52,6 +52,20 @@ body {
     margin: 0px 0px 0px 30px;
 }
 
+.items-container {
+    margin-right: 20px;
+}
+
+.items-container i {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.items-container i:hover {
+    color: wheat;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
 .search input::placeholder {
     color: rgb(134, 125, 125);
 }

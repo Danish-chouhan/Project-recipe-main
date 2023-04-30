@@ -2,7 +2,7 @@
 let breakfast = document.getElementById("Breakfast")
 const btn = document.querySelector('.btn')
 btn.addEventListener('click', () => {
-    window.open('/html/search-recipe.html', '_blank')
+    window.open('search-recipe.html', '_blank')
 })
 
 
@@ -53,6 +53,20 @@ dinner.addEventListener('click', () => {
 }
 )
 
+
+const profileBtn = document.querySelector('.profile')
+const logoutBtn = document.querySelector('.logout')
+
+
+logoutBtn.addEventListener('click',()=> {
+    window.open('signup.html')
+    window.close()
+})
+
+
+profileBtn.addEventListener('click',()=> {
+    window.open('https://github.com/Danish-chouhan/Project-recipe-main')
+})
 // slecting buttons
 
 // date and time
