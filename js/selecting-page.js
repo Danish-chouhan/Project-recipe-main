@@ -18,7 +18,7 @@ profileBtn.addEventListener('click',()=> {
 
 const btn = document.querySelector('.btn')
 btn.addEventListener('click', () => {
-    window.open('/html/search-recipe.html', '_blank')
+    window.open('../html/search-recipe.html', '_blank')
 })
 
 // breakfast
