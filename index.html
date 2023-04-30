@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <form onsubmit="vld()">
+        <form>
             <input type="email" class="email" placeholder="name@example.com">
             <p id="v1"></p>
             <input type="password" class="password" placeholder="Enter Your Password" id="password" spellcheck="true">
@@ -23,51 +23,5 @@
         </form>
     </div>
 </body>
-<!-- <script src="../js/login.js"></script> -->
-<script>
-let validation1 = document.querySelector(".email")
-let validation2 = document.querySelector(".password")
-let flag = 1
-function vld(){
-    if(validation1.value == ""){
-        document.querySelector("#v1").innerHTML = "Please enter your email"
-       flag = 0
-    }else{
-        document.querySelector("#v1").innerHTML = ""
-        flag = 1
-    }
-
-    if(validation1.value == ""){
-           document.querySelector("#v2").innerHTML = "Please enter your password"
-           flag = 0
-    }else{
-        document.querySelector("#v2").innerHTML = ""
-        flag = 1
-    }
-    
-    if(flag){
-        return true
-    }else{ 
-        return false
-    }
-}
-const passwordEye = document.getElementById('btn1');
-const passwordInput = document.getElementById('password');
-
-passwordEye.addEventListener('click',(event)=> {
-    event.preventDefault();
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-    }else{
-        passwordInput.type === 'text';
-        passwordInput.type = 'password'
-    }
-    const text = 'Assalam o alaykum';
-const utterence = new SpeechSynthesisUtterance(text);
-utterence.rate = 0.2;
-window.speechSynthesis.speak(utterence)
-})
-
-
-</script>
+<script src="../js/login.js"></script>
 </html>

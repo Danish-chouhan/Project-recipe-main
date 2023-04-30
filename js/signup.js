@@ -4,14 +4,13 @@ const passwordSignUp = document.querySelector('.password')
 const btn = document.querySelector('.btnLogin')
 
 
-let name  = nameSignUp.value;
-let email = emailSignUp.value;
-let password = passwordSignUp.value;
-
 btn.addEventListener('click',()=> {
-    validateUser()
-
-    localStorage.setItem('name',name)
-    localStorage.setItem('email',email)
-    localStorage.setItem('password',password)
+  if(nameSignUp.value != "" && emailSignUp.value != "" && passwordSignUp.value != ""){
+      validateUser()
+      function validateUser() {
+          window.location.href = "../html/selecting-page.html"
+      }
+}else{    
+    alert("Please fill all details to Singup")
+  }
 })
