@@ -11,18 +11,7 @@ let password = passwordSignUp.value;
 btn.addEventListener('click',()=> {
     validateUser()
 
+    localStorage.setItem('name',name)
+    localStorage.setItem('email',email)
+    localStorage.setItem('password',password)
 })
-
-function validateUser() {
-    if(name === "" && email === "" && password === "") {
-        alert('Enter Details')
-    }
-    else {
-        localStorage.setItem('name',name)
-        localStorage.setItem('email',email)
-        localStorage.setItem('password',password)
-
-        window.open('selecting-page.html')
-        window.close()
-    }
-}
