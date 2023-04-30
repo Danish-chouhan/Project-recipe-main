@@ -3,13 +3,13 @@
 
 const profileBtn = document.querySelector('.profile')
 const logoutBtn = document.querySelector('.logout')
-logoutBtn.addEventListener('click',()=> {
+logoutBtn.addEventListener('click', () => {
     window.open('signup.html')
     window.close()
 })
 // profile btn
 
-profileBtn.addEventListener('click',()=> {
+profileBtn.addEventListener('click', () => {
     window.open('https://github.com/Danish-chouhan/Project-recipe-main')
 })
 
@@ -33,6 +33,7 @@ breakfast.addEventListener('click', () => {
     }
 }
 )
+
 // --------------------
 // Lunch
 
@@ -206,7 +207,7 @@ centerItems1.addEventListener('click', () => {
         document.getElementById("block29").innerHTML = "<img src='../img/Selecting-page/dinner-img/img15.jpg' alt='<h1>Video Tortorial of <span></span></h1>'>"
         document.getElementById("block30").innerHTML = "<h1>Veg pulao</h1><p>is another one pot rice pilaf which is super quick to make either in a pot or cooker. it can be made with mixed veggies or even with a single veggies like potatos, mushroom or even with only peas.</p>"
     }
-    
+
 })
 
 // recipe tourtorial

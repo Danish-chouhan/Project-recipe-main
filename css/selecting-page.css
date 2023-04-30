@@ -9,6 +9,7 @@
 }
 
 body {
+    background-color: rgb(30, 70, 70);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -40,7 +41,7 @@ body {
     cursor: pointer;
 }
 
-     
+
 
 /* header */
 .btn {
@@ -53,6 +54,7 @@ body {
     font-size: 30px;
     color: aqua;
 }
+
 .Header-container {
     position: sticky;
     top: 0;
@@ -62,7 +64,8 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.b-container{
+
+.b-container {
     position: sticky;
     top: 80px;
 }
@@ -135,18 +138,33 @@ body {
 
 /* body */
 
+.frameContainer {
+    width: 1000px;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    margin: 0 180px 0 180px;
+    background-color: rgb(30, 70, 70);
+}
+
 .frame {
-    background-color: rgb(75, 119, 120);
-    display: flex;
-    padding: 30px 200px;
+    margin: 10px 10px 10px 10px;
+    height: 70%;
+    width: 80%;
+    background-image: url("../img/Selecting-page/step1.jpeg");
+    background-size: 100% 100%;
+    box-shadow: 10px 10px 10px rgb(64, 40, 40);
+    animation: changingImg 15s linear infinite;
 }
 
-#left-arrow {
-    align-items: flex-start;
-}
+@keyframes changingImg {
+    0% {
+        background-image: url("../img/Selecting-page/step1.jpeg");
+    }
 
-#right-arrow {
-    justify-content: flex-end;
+    50% {
+        background-image: url("../img/Selecting-page/step2.jpeg");
+    }
 }
 
 .top {
@@ -187,14 +205,15 @@ body {
     font-size: 11px;
     text-align: center;
 }
+
 /* .top-items h1{} */
 
-#Recipe{
+#Recipe {
     border-radius: 4px;
     border: 1px solid white;
     width: 100%;
     box-shadow: 1px 1px 10px rgba(222, 218, 218, 0.374);
-    margin:10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 #Recipe-tourtorial {
@@ -270,9 +289,10 @@ body {
 #block23,
 #block25,
 #block27,
-#block29{
+#block29 {
     margin: 30px 30px 30px 30px;
 }
+
 #block2 p,
 #block4 p,
 #block6 p,
@@ -287,18 +307,18 @@ body {
 #block24 p,
 #block26 p,
 #block28 p,
-#block30 p{
+#block30 p {
     text-align: justify;
-    /* margin: 60px 60px 40px 60px; */
+    margin: 60px 60px 40px 60px;
     font-size: 25px;
-    color: gray;
+    color: rgb(180, 170, 170);
     font-weight: 300;
 }
 
-#block2  h1,
-#block4  h1,
-#block6  h1,
-#block8  h1,
+#block2 h1,
+#block4 h1,
+#block6 h1,
+#block8 h1,
 #block10 h1,
 #block12 h1,
 #block14 h1,
@@ -309,17 +329,19 @@ body {
 #block24 h1,
 #block26 h1,
 #block28 h1,
-#block30 h1{
-    text-shadow: 9px 7px 7px rgba(65, 63, 63, 0.61);
-    text-decoration:underline;
-    font-weight:900;
+#block30 h1 {
+    color: aliceblue;
+    text-shadow: 7px 10px 10px black;
+    text-decoration: underline;
+    font-weight: 900;
     text-align: justify;
     margin: 90px 60px 5px 60px;
     font-size: 45px;
 }
-span{
+
+span {
     text-decoration: underline;
-    color:rgb(43, 95, 226);
+    color: rgb(239, 12, 255);
 }
 
 #block2,
@@ -336,85 +358,99 @@ span{
 #block24,
 #block26,
 #block28,
-#block30{
-  display: flex;
-  flex-direction: column;
-  margin: 10px 40px 40px 10px;
-  justify-content: space-around;
+#block30 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 40px 40px 10px;
+    justify-content: space-around;
 }
 
-#block1  img{
+#block1 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block3  img{
+
+#block3 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block5  img{
+
+#block5 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block7  img{
+
+#block7 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block9  img{
+
+#block9 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block11 img{
+
+#block11 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block13 img{
+
+#block13 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block15 img{
+
+#block15 img {
     height: 100%;
-    border-radius:40px;
-    border: 5px solid white;   
-}
-#block17 img{
-    height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block19 img{
+
+#block17 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block21 img{
+
+#block19 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block23 img{
+
+#block21 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block25 img{
+
+#block23 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block27 img{
+
+#block25 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
     border: 5px solid white;
 }
-#block29 img{
+
+#block27 img {
     height: 100%;
-    border-radius:40px;
+    border-radius: 40px;
+    border: 5px solid white;
+}
+
+#block29 img {
+    height: 100%;
+    border-radius: 40px;
     border: 5px solid white;
 }
