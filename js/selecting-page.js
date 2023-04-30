@@ -1,12 +1,12 @@
 // breakfast
-var breakfast = document.getElementById("Breakfast")
+let breakfast = document.getElementById("Breakfast")
 const btn = document.querySelector('.btn')
-btn.addEventListener('click',()=> {
-    window.open('/html/search-recipe.html','_blank')
+btn.addEventListener('click', () => {
+    window.open('/html/search-recipe.html', '_blank')
 })
 
 
-breakfast.addEventListener('click',function() {
+breakfast.addEventListener('click', () => {
     if (breakfast.textContent == "Breakfast") {
         document.getElementById("Recipe").innerHTML = "<p>Breakfast-Recipe</p>"
         document.getElementById("Recipe-tourtorial").innerHTML = "<p>Breakfast Recipe-tourtorial</p>"
@@ -16,8 +16,8 @@ breakfast.addEventListener('click',function() {
 )
 // --------------------
 // Lunch
-var lunch = document.getElementById("Lunch")
-lunch.addEventListener('click',function() {
+let lunch = document.getElementById("Lunch")
+lunch.addEventListener('click', () => {
     if (lunch.textContent == "Lunch") {
         document.getElementById("Recipe").innerHTML = "<p>Lunch-Recipe</p>"
         document.getElementById("Recipe-tourtorial").innerHTML = "<p>Lunch Recipe-tourtorial</p>"
@@ -29,8 +29,8 @@ lunch.addEventListener('click',function() {
 // --------------------
 
 // snacks
-var snack = document.getElementById("Snack")
-snack.addEventListener('click',function() {
+let snack = document.getElementById("Snack")
+snack.addEventListener('click', () => {
     if (snack.textContent == "Snack") {
         document.getElementById("Recipe").innerHTML = "<p>Snack Recipe</p>"
         document.getElementById("Recipe-tourtorial").innerHTML = "<p>Snack Recipe-tourtorial</p>"
@@ -43,8 +43,8 @@ snack.addEventListener('click',function() {
 
 // dinner
 
-var dinner = document.getElementById("Dinner")
-dinner.addEventListener('click',function() {
+let dinner = document.getElementById("Dinner")
+dinner.addEventListener('click', () => {
     if (dinner.textContent == "Dinner") {
         document.getElementById("Recipe").innerHTML = "<p>Dinner Recipe</p>"
         document.getElementById("Recipe-tourtorial").innerHTML = "<p>Dinner Recipe-tourtorial</p>"
@@ -52,11 +52,6 @@ dinner.addEventListener('click',function() {
     }
 }
 )
-
-
-// let centerItems2 = document.getElementById("Recipe-tourtorial")
-// let centerItems3 = document.getElementById("Product").addEventListener("click", Selecting3())
-
 
 // slecting buttons
 
@@ -69,7 +64,7 @@ dinner.addEventListener('click',function() {
 // -----------------
 
 let centerItems1 = document.getElementById("Recipe")
-centerItems1.addEventListener('click',function(){
+centerItems1.addEventListener('click', () => {
     if (centerItems1.textContent == "Breakfast-Recipe") {
         document.getElementById("block1").innerHTML = "<img src='../img/Selecting-page/breakfast-img/img1.jpg' alt=''>"
         document.getElementById("block2").innerHTML = "<h1>Poha</h1> <p>Poha is a most popular breakfast or snack recipe made with flattened rice (poha), onions, roasted peanuts, and a few spices.'</p>"
@@ -140,9 +135,9 @@ centerItems1.addEventListener('click',function(){
         document.getElementById("block3").innerHTML = " <img src='../img/Selecting-page/snacks-img/img2.jpg' alt=''>"
         document.getElementById("block4").innerHTML = "<h1>Tahini Cookies with Pistachios</h1> <p>The perfect sweet and savory snacking cookie.</p>"
         document.getElementById("block5").innerHTML = " <img src='../img/Selecting-page/snacks-img/img3.webp' alt=''>"
-        document.getElementById("block6").innerHTML = "<h1>Classic Onion Dip</h1> <p>It’s just like the junky stuff you buy in the tub, but of course, not junky at all.</p>"
+        document.getElementById("block6").innerHTML = "<h1>Classic Onion Dip</h1> <p>It's just like the junky stuff you buy in the tub, but of course, not junky at all.</p>"
         document.getElementById("block7").innerHTML = " <img src='../img/Selecting-page/snacks-img/img4.jpg' alt=''>"
-        document.getElementById("block8").innerHTML = "<h1>Apple & Brie Crostini with Hot Honey</h1> <p>You’ll only need a handful of ingredients to make these delicious, easy apple and brie crostini. Plus they only take about 15 minutes to throw together!</p>"
+        document.getElementById("block8").innerHTML = "<h1>Apple & Brie Crostini with Hot Honey</h1> <p>You'll only need a handful of ingredients to make these delicious, easy apple and brie crostini. Plus they only take about 15 minutes to throw together!</p>"
         document.getElementById("block9").innerHTML = " <img src='../img/Selecting-page/snacks-img/img5.jpeg' alt=''>"
         document.getElementById("block10").innerHTML = "<h1>How To Make Crispy Roasted Chickpeas in the Oven</h1> <p>So tiny. So easy to eat by the handful. So irresistible.</p>"
         document.getElementById("block11").innerHTML = " <img src='../img/Selecting-page/snacks-img/img6.jpeg' alt=''>"
@@ -154,7 +149,7 @@ centerItems1.addEventListener('click',function(){
         document.getElementById("block17").innerHTML = " <img src='../img/Selecting-page/snacks-img/img9.jpg' alt=''>"
         document.getElementById("block18").innerHTML = "<h1>Vegan Mushroom (Jerky)</h1> <p>These portobello mushroom slices, which are cooked at low oven temperatures until they dry out slightly and intensify in flavor, are a very good, very creative spin on the idea of jerky.</p>"
         document.getElementById("block19").innerHTML = " <img src='../img/Selecting-page/snacks-img/img10.jpeg' alt=''>"
-        document.getElementById("block20").innerHTML = "<h1>Healthy Zucchini Muffins</h1> <p>They're made with white whole wheat flour, naturally-sweetened, deliciously spiced with cinnamon, easy to freeze, and — even though you won’t taste it — they are chocked full of fresh shredded zucchini.</p>"
+        document.getElementById("block20").innerHTML = "<h1>Healthy Zucchini Muffins</h1> <p>They're made with white whole wheat flour, naturally-sweetened, deliciously spiced with cinnamon, easy to freeze, and — even though you won't taste it — they are chocked full of fresh shredded zucchini.</p>"
         document.getElementById("block21").innerHTML = " <img src='../img/Selecting-page/snacks-img/img11.webp' alt=''>"
         document.getElementById("block22").innerHTML = "<h1>Kolar Pitha</h1><p>Sticky Bangladeshi banana fritters sweetened with maple.</p>"
         document.getElementById("block23").innerHTML = " <img src='../img/Selecting-page/snacks-img/img12.jpg' alt=''>"
@@ -201,8 +196,136 @@ centerItems1.addEventListener('click',function(){
 
 })
 
-const person = {
-    name : 'Danish',
-    age : 19,
-};
-console.log(sessionStorage.setItem('person',JSON.stringify(person)));
+// resipe tourtorial
+
+let centerItems2 = document.getElementById("Recipe-tourtorial")
+centerItems2.addEventListener('click', () => {
+    if (centerItems2.textContent == "Breakfast Recipe-tourtorial") {
+        document.getElementById("block1").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/jODnSnhbIbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        document.getElementById("block2").innerHTML = ''
+        document.getElementById("block3").innerHTML = ''
+        document.getElementById("block4").innerHTML = ''
+        document.getElementById("block5").innerHTML = ''
+        document.getElementById("block6").innerHTML = ''
+        document.getElementById("block7").innerHTML = ''
+        document.getElementById("block8").innerHTML = ''
+        document.getElementById("block9").innerHTML = ''
+        document.getElementById("block10").innerHTML = ''
+        document.getElementById("block11").innerHTML = ''
+        document.getElementById("block12").innerHTML = ''
+        document.getElementById("block13").innerHTML = ''
+        document.getElementById("block14").innerHTML = ''
+        document.getElementById("block15").innerHTML = ''
+        document.getElementById("block16").innerHTML = ''
+        document.getElementById("block17").innerHTML = ''
+        document.getElementById("block18").innerHTML = ''
+        document.getElementById("block19").innerHTML = ''
+        document.getElementById("block20").innerHTML = ''
+        document.getElementById("block21").innerHTML = ''
+        document.getElementById("block22").innerHTML = ''
+        document.getElementById("block23").innerHTML = ''
+        document.getElementById("block24").innerHTML = ''
+        document.getElementById("block25").innerHTML = ''
+        document.getElementById("block26").innerHTML = ''
+        document.getElementById("block27").innerHTML = ''
+        document.getElementById("block28").innerHTML = ''
+        document.getElementById("block29").innerHTML = ''
+        document.getElementById("block30").innerHTML = ''
+    }
+    if (centerItems2.textContent == "Lunch Recipe-tourtorial") {
+        document.getElementById("block1").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/jODnSnhbIbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        document.getElementById("block2").innerHTML = ''
+        document.getElementById("block3").innerHTML = ''
+        document.getElementById("block4").innerHTML = ''
+        document.getElementById("block5").innerHTML = ''
+        document.getElementById("block6").innerHTML = ''
+        document.getElementById("block7").innerHTML = ''
+        document.getElementById("block8").innerHTML = ''
+        document.getElementById("block9").innerHTML = ''
+        document.getElementById("block10").innerHTML = ''
+        document.getElementById("block11").innerHTML = ''
+        document.getElementById("block12").innerHTML = ''
+        document.getElementById("block13").innerHTML = ''
+        document.getElementById("block14").innerHTML = ''
+        document.getElementById("block15").innerHTML = ''
+        document.getElementById("block16").innerHTML = ''
+        document.getElementById("block17").innerHTML = ''
+        document.getElementById("block18").innerHTML = ''
+        document.getElementById("block19").innerHTML = ''
+        document.getElementById("block20").innerHTML = ''
+        document.getElementById("block21").innerHTML = ''
+        document.getElementById("block22").innerHTML = ''
+        document.getElementById("block23").innerHTML = ''
+        document.getElementById("block24").innerHTML = ''
+        document.getElementById("block25").innerHTML = ''
+        document.getElementById("block26").innerHTML = ''
+        document.getElementById("block27").innerHTML = ''
+        document.getElementById("block28").innerHTML = ''
+        document.getElementById("block29").innerHTML = ''
+        document.getElementById("block30").innerHTML = ''
+    }
+    if (centerItems2.textContent == "Snack Recipe-tourtorial") {
+        document.getElementById("block1").innerHTML = ''
+        document.getElementById("block2").innerHTML = ''
+        document.getElementById("block3").innerHTML = ''
+        document.getElementById("block4").innerHTML = ''
+        document.getElementById("block5").innerHTML = ''
+        document.getElementById("block6").innerHTML = ''
+        document.getElementById("block7").innerHTML = ''
+        document.getElementById("block8").innerHTML = ''
+        document.getElementById("block9").innerHTML = ''
+        document.getElementById("block10").innerHTML = ''
+        document.getElementById("block11").innerHTML = ''
+        document.getElementById("block12").innerHTML = ''
+        document.getElementById("block13").innerHTML = ''
+        document.getElementById("block14").innerHTML = ''
+        document.getElementById("block15").innerHTML = ''
+        document.getElementById("block16").innerHTML = ''
+        document.getElementById("block17").innerHTML = ''
+        document.getElementById("block18").innerHTML = ''
+        document.getElementById("block19").innerHTML = ''
+        document.getElementById("block20").innerHTML = ''
+        document.getElementById("block21").innerHTML = ''
+        document.getElementById("block22").innerHTML = ''
+        document.getElementById("block23").innerHTML = ''
+        document.getElementById("block24").innerHTML = ''
+        document.getElementById("block25").innerHTML = ''
+        document.getElementById("block26").innerHTML = ''
+        document.getElementById("block27").innerHTML = ''
+        document.getElementById("block28").innerHTML = ''
+        document.getElementById("block29").innerHTML = ''
+        document.getElementById("block30").innerHTML = ''
+    }
+    if (centerItems2.textContent == "Dinner Recipe-tourtorial") {
+        document.getElementById("block1").innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/jODnSnhbIbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+        document.getElementById("block2").innerHTML = ''
+        document.getElementById("block3").innerHTML = ''
+        document.getElementById("block4").innerHTML = ''
+        document.getElementById("block5").innerHTML = ''
+        document.getElementById("block6").innerHTML = ''
+        document.getElementById("block7").innerHTML = ''
+        document.getElementById("block8").innerHTML = ''
+        document.getElementById("block9").innerHTML = ''
+        document.getElementById("block10").innerHTML = ''
+        document.getElementById("block11").innerHTML = ''
+        document.getElementById("block12").innerHTML = ''
+        document.getElementById("block13").innerHTML = ''
+        document.getElementById("block14").innerHTML = ''
+        document.getElementById("block15").innerHTML = ''
+        document.getElementById("block16").innerHTML = ''
+        document.getElementById("block17").innerHTML = ''
+        document.getElementById("block18").innerHTML = ''
+        document.getElementById("block19").innerHTML = ''
+        document.getElementById("block20").innerHTML = ''
+        document.getElementById("block21").innerHTML = ''
+        document.getElementById("block22").innerHTML = ''
+        document.getElementById("block23").innerHTML = ''
+        document.getElementById("block24").innerHTML = ''
+        document.getElementById("block25").innerHTML = ''
+        document.getElementById("block26").innerHTML = ''
+        document.getElementById("block27").innerHTML = ''
+        document.getElementById("block28").innerHTML = ''
+        document.getElementById("block29").innerHTML = ''
+        document.getElementById("block30").innerHTML = ''
+    }
+})
